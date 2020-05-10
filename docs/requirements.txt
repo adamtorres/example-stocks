@@ -1,0 +1,2 @@
+git+https://github.com/adamtorres/markdown-server@localcustomizations#egg=markdownserver-0.1.4
+git+https://github.com/adamtorres/pygments@localcustomizations#egg=Pygments-2.6.2dev
