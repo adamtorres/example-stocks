@@ -1,6 +1,14 @@
 [TOC]
 
 # Yet Another Python Tutorial
+## Assumptions
+
+Local system
+:    You are using OSX as your local OS.  Some of the steps will be using `brew` to install packages.  Depending on how much of that there is, I might include steps for other systems.
+
+Patience
+:    You have an abundance of patience as I've not written a tutorial before.
+
 ## Summary
 This tutorial will cover setting up a webserver, database, RESTful API, and workers.  Initially, these will be set up on the local OSX system.  A subsequent section will show how to do the same on a local docker.  Then a remote docker system will be used while showing some benefits and limitations for doing so.
 
