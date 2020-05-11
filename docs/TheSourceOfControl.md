@@ -52,7 +52,7 @@ Merge
 :    tbd
 
 Clone
-:    tbd
+:    Downloading a copy of a repository is called cloning.  Where a fork is copying another repo with the intent that changes might not go upstream, cloning generally implies you intend changes to do so.
 
 Pull Request
 :    tbd
