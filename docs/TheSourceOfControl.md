@@ -68,12 +68,3 @@ All of them allow team members to work on things in a safe manner without steppi
     brew install sourcetree
 
 [Back to main](readme.md)
-
-
-    #!python
-    class Bob(object)
-        pass
-    
-    def test(arg):
-        x = Bob()
-        print("Hello world. no path")
