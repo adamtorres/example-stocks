@@ -9,6 +9,9 @@ Local system
 Patience
 :    You have an abundance of patience as I've not written a tutorial before.
 
+Feedback
+:    If you have questions, ask them.  If you have suggestions, make them.  This doc is a work in progress.
+
 ## Summary
 This tutorial will cover setting up a webserver, database, RESTful API, and workers.  Initially, these will be set up on the local OSX system.  A subsequent section will show how to do the same on a local docker.  Then a remote docker system will be used while showing some benefits and limitations for doing so.
 
