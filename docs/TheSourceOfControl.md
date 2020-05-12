@@ -11,6 +11,12 @@
 2. list
     * With some
     * Sub bullets
+<details>
+<summary>Here's a nested chunk.</summary>
+
+Yo dawg.  I heard you like details, so I put details in your details...
+</details>
+
 </details>
 
 # The Source of Control
