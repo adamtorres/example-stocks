@@ -73,7 +73,7 @@ Strip Commit
 Personally, I've not heard much from anything except git and mercurial lately.  That doesn't mean the others are crap or even unpopular, just that I'm unobservant.  The actual software used doesn't really have too large of an impact on what they do.  All of them maintain a history of changes.  
 All of them allow team members to work on things in a safe manner without stepping on other people's toes - too much.  Where they differ is in philosphy and fiddly details of how certain steps are taken.
 
-Some clarification:
+### Some clarification
 
 * git is a distributed VCS.
 * Github is a website that hosts git repos.
@@ -86,13 +86,27 @@ Some clarification:
 
 Both git and Mercurial share a lot of terminology but there are some vast differences in how they actually store the history.  I'm not sure if it is useful to go into the myriad differences as the use of them doesn't truly require the knowledge.
 
+### Using the Tools, Command Line or GUI?
 Both git and hg are command line tools.  You can do pretty much everything from the command line wihtout need of a gui.  Or, if you are a more visual person, there are numerous graphical applications which present a prettier view of the VCS.  These applications do not replace the command line tool.  Often, they use the command line tools behind the scenes.  Granted, they sometimes use their own version of the tool rather than the one you installed.  That is so they know exactly how the tool will behave as the one you installed might be newer and have slightly changed commands/options.
 
 A decent graphical tool for OSX is [SourceTree](https://www.sourcetreeapp.com/).  A graphical tool makes visualizing branch relations a lot easier as they literally show you the relations without you having to interpret ASCII art graphs.
 
-Installing a graphical tool does not mean you cannot use the command line.  I have Sourcetree installed and there are still plenty of times where I run `git add .`, `git commit -m "some commit message"`, `git pull`, or `git push`.  If I'm at the command line anyway, might as well use it.
+Installing a graphical tool does not mean you cannot use the command line.  I have Sourcetree installed and there are still plenty of times where I run `git add .`, `git commit -m "some commit message"`, `git pull`, or `git push`.  If I'm at the command line anyway, might as well use it.  Think of the repo like a text file.  You can use any text editor, graphical or command line, to make changes.
+
+Installing SourceTree on OSX can be done from their website, or you can use brew.
 
     :::bash
     brew install sourcetree
+
+### How They Store the History
+Git stores its repository in a hidden folder at the root of the project.  This folder is named `.git`.  I've only really messed with one file inside that folder.  The `.git/config` file holds a few settings for the repo.  Noteably, the upstream repo or origin.  At times, I've had to tweak that as I tend to break things or do things the hard way.  There shouldn't be much need to go into that folder.
+
+Mercurial stores its repo files in `.hg` folders.  It has been sufficiently long enough that I don't recall any more.  And it is 1am and I'm too tired to look it up.
+
+### Does Absolutely Everything Get Tracked?
+Nope.  See `.gitignore` and `.hgignore`.
+
+## Workflow Patterns
+Walkthrough some common processes for features, bugs, and releases.
 
 [Back to main](readme.md)
