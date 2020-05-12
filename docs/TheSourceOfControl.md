@@ -2,16 +2,6 @@
 
 [TOC]
 
-# A collapsible section with markdown
-<details>
-<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</summary>
-<details>
-<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</summary>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</details>
-</details>
-
 # The Source of Control
 The term "Source control" is a general term for keeping track of a history of changes to the files in a project.  Most of the time, the files are all source code but images and other arbitrary files can be included.  For the most part, source control software is optimized to handle text files so keeping random binary files to a minimum is suggested.  Some other names for this type of software are,
 
@@ -27,7 +17,9 @@ When working as part of a team, this is especially useful as each person could b
 There is a pile of terms that are commonly used by most VCS.  The particular behavior of some of these changes slightly depending on the VCS but for the most part, the changes aren't 180 degrees.  You won't run into a case where one VCS defines True as False.
 
 Repository
-:    The repository is what holds all of the information for a project - every commit, comment, and any metadata associated with the repository.  Generally, there will be a hidden folder in the project's root folder that stores this data.  Usually, there's no reason for anyone to dig into that folder as making changes can easily break the repository.  Unless you have a backup or can somehow repair what broke, then all of the project's history is gone.  A repository is not a backup.
+:    <details><summary>The repository is what holds all of the information for a project - every commit, comment, and any metadata associated with the repository.</summary>
+    Generally, there will be a hidden folder in the project's root folder that stores this data.  Usually, there's no reason for anyone to dig into that folder as making changes can easily break the repository.  Unless you have a backup or can somehow repair what broke, then all of the project's history is gone.  A repository is not a backup.
+</details>
 
 Fork
 :    Let's say there's a project you like but has some quirks you don't.  You want to improve on that project but don't want to start from scratch.  You can copy the project at its current version and start making changes to your local repository.  When you make commits, they only get added to your local repository and the source of the fork does not see them.  Making the assumption you have a GitHub account, there's a handy `fork` link on repo pages that will put a copy of the repo into your account.  This preserves the parent/child relation making it easier for you to submit changes if you wanted to.  Also allows GitHub and others to see how many times (and by who) a repo was forked.  Kind of like a popularity count.
