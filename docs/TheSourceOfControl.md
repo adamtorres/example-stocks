@@ -2,6 +2,17 @@
 
 [TOC]
 
+# A collapsible section with markdown
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
+
 # The Source of Control
 The term "Source control" is a general term for keeping track of a history of changes to the files in a project.  Most of the time, the files are all source code but images and other arbitrary files can be included.  For the most part, source control software is optimized to handle text files so keeping random binary files to a minimum is suggested.  Some other names for this type of software are,
 
