@@ -38,7 +38,7 @@ Commonly used interchangably, these refer to the text-based interface.  Technica
 Any line starting with `#` will be ignored.  There have been times I've started a long command but didn't want to run it just yet.  To "save" it, I'd go to the start of the line and add a `#` and press enter.  It would save the line in the command history but not actually run it.  I could then press up arrow and remove the `#` to run the command.
 
 ### Quick text editors
-This is a sensitive subject, see [the wiki on it](https://en.wikipedia.org/wiki/Editor_war).  The editors I've used for a long time is `vi` and `vim`.  The latter is an improved version of the former.  It takes a bit of getting used to but is quick and hasn't crapped out on any of the small files I've given it.  Only on files of a size that hurt most text editors does it start to fail.  I only use the basic text-editing functions (moving around and find/replace) but it has a lot of other functionality.  The main reason to use some form of text editor in the shell is speed.  If you're in a folder on the shell, typing `vi somefile.txt`, is a lot faster than switching to Finder, navigating to the folder, and double-clicking the file.  Or, if the default action is to execute as with shell scripts, right-clicking the file, selecting "Open with...", "Other", then finding the app to use.
+This is a sensitive subject, see [the wiki on it](https://en.wikipedia.org/wiki/Editor_war) for more details.  The editors I've used for a long time is `vi` and `vim`.  The latter is an improved version of the former.  It takes a bit of getting used to but is quick and hasn't crapped out on any of the small files I've given it.  Only on files of a size that hurt most text editors does it start to fail.  I only use the basic text-editing functions (moving around and find/replace) but it has a lot of other functionality.  The main reason to use some form of text editor in the shell is speed.  If you're in a folder on the shell, typing `vi somefile.txt`, is a lot faster than switching to Finder, navigating to the folder, and double-clicking the file.  Or, if the default action is to execute as with shell scripts, right-clicking the file, selecting "Open with...", "Other", then finding the app to use.
 
 ### Terminal Condition
 The terminal application used doesn't matter too much if you're just poking around.  If you use the shell much more than that, quirks of the application can start to make a big difference between "just popping in to poke at something" and "holy crap, I hate doing this."  The default terminal application in OSX made me seek out an alternative so long ago, I'm not certain exactly what quirks there were.  The terminal application I use is called [iTerm](https://www.iterm2.com/).  It isn't in the App Store for whatever reason, so you'd have to go to their site to download.
@@ -311,10 +311,10 @@ Create the root folder for this example project.  The name does not have to be t
     :::bash
     mkcd example-stocks
 
-Create the file that tells pyenv to use the new environment for this folder and any subfolders.
+The `local` command creates the file (.python-version) that tells pyenv to use the new environment for this folder and any subfolders.
 
     :::bash
-    echo "example-stocks" > .python-version
+    pyenv local example-stocks
 
 Now, when you check pyenv versions, it should look more like this:
 
