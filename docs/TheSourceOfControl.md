@@ -101,10 +101,10 @@ Installing SourceTree on OSX can be done from their website, or you can use brew
 ### How They Store the History
 Git stores its repository in a hidden folder at the root of the project.  This folder is named `.git`.  I've only really messed with one file inside that folder.  The `.git/config` file holds a few settings for the repo.  Noteably, the upstream repo or origin.  At times, I've had to tweak that as I tend to break things or do things the hard way.  There shouldn't be much need to go into that folder.
 
-Mercurial stores its repo files in `.hg` folders.  It has been sufficiently long enough that I don't recall any more.  And it is 1am and I'm too tired to look it up.
+Mercurial stores its repo files in `.hg` folders.  Pretty much the same thing goes for hg as it does for git.  Don't mess with the files in those folders unless you have a very good reason and are willing to accept the consequences.
 
 ### Does Absolutely Everything Get Tracked?
-Nope.  See `.gitignore` and `.hgignore`.
+Not everything needs to be tracked.  Many languages generate temporary files which don't need to be saved.  Also, if you're working in a team, other team members would not appreciate you saving files from your IDE in the repo as it wastes space, makes commits noisy, and could conflict with their IDE.  For example, PyCharm stores project settings and state in a folder named `.idea` in the project root.  There are files that you can add patterns to named `.gitignore` and `.hgignore`.  
 
 ## Workflow Patterns
 Walkthrough some common processes for features, bugs, and releases.
