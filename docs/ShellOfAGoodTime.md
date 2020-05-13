@@ -8,8 +8,8 @@ Before going into python, you need a way to get to it.  The shell is a quick way
 ## Shell basics
 ### Terminology
 
-Folder and directory
-:    Equivalent terms.  I use them interchangably.  when looking at file listings, they can be identified in a couple ways.  Using the below as an example, the far left column is for attributes and permissions.  The ones with a `d` are directories.  Also, because of the command used, the directory names are marked with a trailing `/`.  In this case, the folders are `.git`, `app`, and `docs`.  The two at the top, `.` and `..`, are special folders referring to the current folder and the parent folder, respectively.  I tend to ignore those as they are more symbolic.
+<details><summary>Folder and directory</summary>
+Equivalent terms.  I use them interchangably.  when looking at file listings, they can be identified in a couple ways.  Using the below as an example, the far left column is for attributes and permissions.  The ones with a `d` are directories.  Also, because of the command used, the directory names are marked with a trailing `/`.  In this case, the folders are `.git`, `app`, and `docs`.  The two at the top, `.` and `..`, are special folders referring to the current folder and the parent folder, respectively.  I tend to ignore those as they are more symbolic.
 
     :::plaintext
     adam@Adams-MacBook-Air: ll
@@ -27,10 +27,11 @@ Folder and directory
     -rwxr-xr-x@  1 adam  staff   359B May 11 13:18 d_run.sh
     -rwxr-xr-x@  1 adam  staff   172B May 10 23:56 d_shortcut.sh
     drwxr-xr-x   3 adam  staff    96B May 11 13:32 docs/
+</details>
 
-Shell, Command line, CLI
-:    Commonly used interchangably, these refer to the text-based interface.  Technically, I believe `shell` is really the application which provides a command line interface (CLI).  Common shells are `bash` and `sh`.  OSX uses a slightly customized bash shell.  Googling help for a command by "bash [command]" is a good starting point.  If that doesn't help, try adding "OSX" as there are some quirks to how Apple did things.
-
+<details><summary>Shell, Command line, CLI</summary>
+Commonly used interchangably, these refer to the text-based interface.  Technically, I believe `shell` is really the application which provides a command line interface (CLI).  Common shells are `bash` and `sh`.  OSX uses a slightly customized bash shell.  Googling help for a command by "bash [command]" is a good starting point.  If that doesn't help, try adding "OSX" as there are some quirks to how Apple did things.
+</details>
 
 
 ### Comments from the peanut gallery
