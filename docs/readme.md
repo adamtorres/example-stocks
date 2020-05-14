@@ -64,4 +64,7 @@ And the output:
 ??? Maintainability
     Be nice to the next guy.  It might very well be you coming back to some code in 6 months and having to read through everything to figure out how it was trying to work and why it is breaking.  Good names, separation of concerns, and short/to-the-point functions all help with that.
 
+??? Self-updating containers?
+    Not sure if this is a good idea.  It'd be something like the markdown-doc-server such that it clones or pulls on start so it gets the most updated code.  To make a running container do that would require some way for github to notify the container of changes.  Github allows for email notifications and webhooks.  Webhooks are where github POSTs to a specified url when certain actions happen.  A possibility would be to have a webhook service which is hosted at hookers.example.com.  This service would need to keep track of which url cooresponds to which docker container.  When it gets a hit on a given url, it either interacts with the container to tell it to gently pull new changes or it kills and restarts the container allowing the startup script to pull the new changes.  For the markdown-doc-server, the second would be the easiest as the existing container doesn't need changing and only the webhook service needs written.  This is not a good idea for anything that generates money as automatically putting new code into production is just begging for disaster.
+
 Blarg

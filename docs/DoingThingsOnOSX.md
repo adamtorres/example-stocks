@@ -30,18 +30,18 @@ Running `tree` will show the four folders created in the `example-stocks` folder
 ## Django Terminology
 Django is a framework to make it easier to translate url requests into understandable output while interacting with a database.
 
-Views
-:    A view is a function which is called when a user tries to visit a page hosted by the server.  The function has access to a pile of information from the user's browser, the requested url, any submitted form fields, and possibly much more.  Using any or none of that, the function uses a template to build a response which is fed back to the user.  
+??? Views
+    A view is a function which is called when a user tries to visit a page hosted by the server.  The function has access to a pile of information from the user's browser, the requested url, any submitted form fields, and possibly much more.  Using any or none of that, the function uses a template to build a response which is fed back to the user.  
 
-Models
-:    Class is to Model is to Customer is to Adam
-Drawing is to Blueprint is to House is to 123 Main St
+??? Models
+    Class is to Model is to Customer is to Adam
+    Drawing is to Blueprint is to House is to 123 Main St
 
-Migrations
-:    tbd
+??? Migrations
+    tbd
 
-Mixin
-:    Snippets of classes 
+??? Mixin
+    Snippets of classes 
 
 
 ## Initial Django Setup
