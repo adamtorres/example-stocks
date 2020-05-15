@@ -19,9 +19,13 @@ I wonder why the detail/summary thing doesn't work well in Textmate when there i
 
 ## Code blocks
 
+Plaintext is meant for console output or whatever that doesn't need syntax highlighting.  This is a custom lexer in pygments.
+
     :::plaintext
     This is the 'plaintext' code block.
     It is meant for console output or whatever that doesn't need syntax highlighting.
+
+The lexer used here is `bash`.  I've not checked pygments for other shells.  Pretty sure it would key off the `#!` line but I like to explicitly declare the language.  Especially since I'm also likely to show commands that aren't in a script.
 
     :::bash
     #! /usr/bin/env bash
@@ -30,6 +34,8 @@ I wonder why the detail/summary thing doesn't work well in Textmate when there i
         exit 9999
     fi
     echo "The arg is '$1'"
+
+Going to be showing a bunch of python so need to make sure this works as well.
 
     :::python
     import time
@@ -41,8 +47,11 @@ I wonder why the detail/summary thing doesn't work well in Textmate when there i
     x = Thing()
     x.sound()
 
+Not sure if there will be any SQL but it is here just to make sure it works.
+
     :::sql
     SELECT 'thing' AS field, name
     FROM some_table
     ORDER BY name;
 
+fin.
