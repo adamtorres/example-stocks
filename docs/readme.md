@@ -49,6 +49,9 @@ And the output:
 ??? Source Control / Repositories / Revision Control
     The above are common terms for the concept of keeping a history of changes to a code base.  Regardless of how they keep the history, it is a good thing as it allows developers to go back in time to revisit old versions. [The Source of Control](TheSourceOfControl.md) is knowing your project's history.
 
+??? Django
+    Frameworks help with doing a lot of the grunt work so you can get to the meat of the project.  Django started as a simple content management system for articles.  Over time, it was upgraded to include a great many features that make it usable for many purposes.  Of course, as with any framework, it has its own terminology and patterns.  More on all of that [here](Django.md).
+
 ??? Creating the example project on the local system
     Running code locally is the most straight-forward route as far as understanding goes.  There are no containers, volumes, port translations, or any other garbage to get in the way.  If you start a database server that claims it is listening on port 5432, then the database server is listening on that port of your local system.  It potentially causes conflicts if you work on multiple projects where they might need different versions of software or want the same ports or the same folders.  Regardless of the pitfalls, the first step to this project will be [doing everything locally on OSX](DoingThingsOnOSX.md).
 
