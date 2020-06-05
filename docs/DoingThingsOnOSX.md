@@ -151,6 +151,65 @@ urls.py
 settings.py
 :    This is where the project-level settings are grouped.  App-level settings will be handled by Django AppConf within each app.
 
+## Configuring an IDE
+Up to now, no IDE (integrated development environment) has been used.  I'd be surprised if most python IDEs didn't have some Django integration for most commands, but from what I've experienced, many of those integrations just kinda work.  When Django makes changes, they kinda break.  I've found it easier to do most things via command line.  Especially when things break, the error isn't hidden in IDE error messages.  That said, the IDE needs to know which virtual environment to use as it likely tracks which packages you are using and would constantly pop up warnings about missing requirements.
+
+### Thonny
+`Cmd+,` to open the preferences window.
+Click the `Interpreter` tab and `Locate another python executable` box on that tab.
+Brings up a `Finder` style window.
+`Cmd+Shift+G` to bring up a prompt for a location as we need to get into a hidden folder.
+Type `~/.pyenv/versions/` and press enter.  The `~` is a shortcut for the current user's home folder.
+Navigate into whichever environment was created, then `bin` and select `python3`.
+Open `Tools` and `Manage Packages`.  You should see a list on the left of about 15 or so packages.
+
+#### Note About Thonny
+I was unable to find a way for Thonny to deal with a multi-file project.  This will likely become an issue with large projects.  For a script thrown together to do a specific task, it should be ok.
+
+### Pycharm
+Start Pycharm and tell it to open the `web` folder.  Don't point it at the `example-stocks` folder as there will be another python project in the `api` folder.  It will take a moment to start as they've been adding more bloat to the app over time for new and happy features.
+`Cmd+,` to open the preferences window.
+Expand the `Project: web` tree and select `Project Interpreter`.
+Click the gear icon at the top right and select `Add...`
+Make sure `Virtual Environment` is selected on the left list and `Existing Environment` is the selected option on the right.
+Click the `...` to the right of `Existing Interpreter` to bring up a new dialog box.
+Type `~/.pyenv/versions/` and press enter.  The `~` is a shortcut for the current user's home folder.
+Navigate into whichever environment was created, then `bin` and select `python3`.
+It will take a moment to read through the packages and index the code for autocomplete goodness.  Once done, you should see a list of about 15 or so packages.
+
+Pycharm likes to help you with your source code repository.  The pop up might show up in the bottom right corner to ask if you want to add project configuration files to the repo.  This is generally not a good idea.  First, if you are working in a team, each person could use a different application making chunks of the stored code useless.  If you are working alone, it would be ok except for the habit building it does to do so.  When you end up on a team, you might add the files just out of habit.  Pycharm's project settings are stored in a folder called `.idea` at the root of the project.
+
+For more info on general Pycharm usage, search Youtube for it.  I might write some later if requested.  Just be aware there are Windows and Linux versions so videos might be for a different OS.  The visual layout of the IDE is very similar across OS' but the keyboard shortcuts are definitely different.
+
+TODO: Is there more setup needed?  I think I skipped ahead and didn't write something down.
+
+## Testing Django Without Any Additions
+Now to see if everything installed correctly.  For Pycharm, click the green right arrow in the tool bar.  For the command line, make sure you are in the `web` folder and then type:
+
+    :::bash
+    ./manage.py runserver
+
+Regarless of which you use, the output should be similar to the below.
+
+    :::plainconsole
+    Watching for file changes with StatReloader
+    Performing system checks...
+
+    System check identified no issues (0 silenced).
+
+    You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+    Run 'python manage.py migrate' to apply them.
+    June 05, 2020 - 16:14:12
+    Django version 3.0.6, using settings 'stockings.settings'
+    Starting development server at http://127.0.0.1:8000/
+    Quit the server with CONTROL-C.
+
+Note the `Starting development server at http://127.0.0.1:8000/` line.  This tells you what url to put into your browser.  In `terminal`, right-clicking the url should select the entire url and include an option to `Open URL`.  In `iTerm2`, holding `Cmd` will turn the url into a clickable link.  In Pycharm, the url is clickable without any additional action needed.  It should be obvious if it worked as the page should come up with a message including "The install worked successfully! Congratulations!"
+If on the terminal or iTerm2, press `Ctrl+C` to stop it.  If in PyCharm, click the red square either on the top toolbar or to the left of the output panel.
+
+## Creating a Hello World app
+Of course, the first thing anyone should always do when learning a new language or framework is make it say 'Hello'.  To do this, 
+
 Odd.  Cannot seem to have a code block immediately after a definition.
 
     :::bash
