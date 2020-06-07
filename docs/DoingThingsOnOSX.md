@@ -178,11 +178,9 @@ I was unable to find a way for Thonny to deal with a multi-file project.  This w
 * Navigate into whichever environment was created, then `bin` and select `python3`.
     * It will take a moment to read through the packages and index the code for autocomplete goodness.  Once done, you should see a list of about 15 or so packages.
 
-Pycharm likes to help you with your source code repository.  The pop up might show up in the bottom right corner to ask if you want to add project configuration files to the repo.  This is generally not a good idea.  First, if you are working in a team, each person could use a different application making chunks of the stored code useless.  If you are working alone, it would be ok except for the habit building it does to do so.  When you end up on a team, you might add the files just out of habit.  Pycharm's project settings are stored in a folder called `.idea` at the root of the project.
+Pycharm likes to help you with your source code repository.  A pop up might show up in the bottom right corner to ask if you want to add project configuration files to the repo.  This is generally not a good idea.  First, if you are working in a team, each person could use a different application making chunks of the stored code useless.  If you are working alone, it would be ok except for the habit building it does to do so.  When you end up on a team, you might add the files just out of habit.  Pycharm's project settings are stored in a folder called `.idea` at the root of the project.
 
 For more info on general Pycharm usage, search Youtube for it.  I might write some later if requested.  Just be aware there are Windows and Linux versions so videos might be for a different OS.  The visual layout of the IDE is very similar across OS' but the keyboard shortcuts are definitely different.
-
-TODO: Is there more setup needed?  I think I skipped ahead and didn't write something down.
 
 ## Testing Django Without Any Additions
 Now to see if everything installed correctly.  For Pycharm, click the green right arrow in the tool bar.  For the command line, make sure you are in the `web` folder and then type:
