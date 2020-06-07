@@ -170,7 +170,7 @@ I was unable to find a way for Thonny to deal with a multi-file project.  This w
 
 * Start Pycharm and tell it to open the `web` folder.  Don't point it at the `example-stocks` folder as there will be another python project in the `api` folder.  It will take a moment to start as they've been adding more bloat to the app over time for new and happy features.
 * `Cmd+,` to open the preferences window.
-* Expand the `Project: web` tree and select `Project Interpreter`.  It should have "<No interpreter>" selected in the drop down box.
+* Expand the `Project: web` tree and select `Project Interpreter`.  It should have "&lt;No interpreter&gt;" selected in the drop down box.
 * Click the gear icon at the top right and select `Add...`
 * Make sure `Virtual Environment` is selected on the left list and `Existing Environment` is the selected option on the right.
 * Click the `...` to the right of `Existing Interpreter` to bring up a new dialog box.
