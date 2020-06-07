@@ -170,13 +170,13 @@ I was unable to find a way for Thonny to deal with a multi-file project.  This w
 
 * Start Pycharm and tell it to open the `web` folder.  Don't point it at the `example-stocks` folder as there will be another python project in the `api` folder.  It will take a moment to start as they've been adding more bloat to the app over time for new and happy features.
 * `Cmd+,` to open the preferences window.
-* Expand the `Project: web` tree and select `Project Interpreter`.
+* Expand the `Project: web` tree and select `Project Interpreter`.  It should have "<No interpreter>" selected in the drop down box.
 * Click the gear icon at the top right and select `Add...`
 * Make sure `Virtual Environment` is selected on the left list and `Existing Environment` is the selected option on the right.
 * Click the `...` to the right of `Existing Interpreter` to bring up a new dialog box.
 * Type `~/.pyenv/versions/` and press enter.  The `~` is a shortcut for the current user's home folder.
 * Navigate into whichever environment was created, then `bin` and select `python3`.
-  * It will take a moment to read through the packages and index the code for autocomplete goodness.  Once done, you should see a list of about 15 or so packages.
+    * It will take a moment to read through the packages and index the code for autocomplete goodness.  Once done, you should see a list of about 15 or so packages.
 
 Pycharm likes to help you with your source code repository.  The pop up might show up in the bottom right corner to ask if you want to add project configuration files to the repo.  This is generally not a good idea.  First, if you are working in a team, each person could use a different application making chunks of the stored code useless.  If you are working alone, it would be ok except for the habit building it does to do so.  When you end up on a team, you might add the files just out of habit.  Pycharm's project settings are stored in a folder called `.idea` at the root of the project.
 
