@@ -9,7 +9,7 @@ Before going into python, you need a way to get to it.  The shell is a quick way
 ### Terminology
 
 <details><summary>Folder and directory</summary>
-Equivalent terms.  I use them interchangably.  when looking at file listings, they can be identified in a couple ways.  Using the below as an example, the far left column is for attributes and permissions.  The ones with a `d` are directories.  Also, because of the command used, the directory names are marked with a trailing `/`.  In this case, the folders are `.git`, `app`, and `docs`.  The two at the top, `.` and `..`, are special folders referring to the current folder and the parent folder, respectively.  I tend to ignore those as they are more symbolic.
+Equivalent terms.  I use them interchangably.  when looking at file listings, they can be identified in a couple ways.  Using the below as an example, the far left column is for attributes and permissions.  The ones with a `d` are directories.  Also, because of the command used, the directory names are marked with a trailing `/`.  In this case, the folders are `.git`, `app`, and `docs`.  The two at the top, `.` and `..`, are special folders referring to the current folder and the parent folder, respectively.  I tend to ignore those when looking at folder contents as they are just symbolic.
 
     :::plaintext
     adam@Adams-MacBook-Air: ll
@@ -33,6 +33,10 @@ Equivalent terms.  I use them interchangably.  when looking at file listings, th
 Commonly used interchangably, these refer to the text-based interface.  Technically, I believe `shell` is really the application which provides a command line interface (CLI).  Common shells are `bash` and `sh`.  OSX uses a slightly customized bash shell.  Googling help for a command by "bash [command]" is a good starting point.  If that doesn't help, try adding "OSX" as there are some quirks to how Apple did things.
 </details>
 
+<details><summary>Environment Variables</summary>
+The various settings for a given shell session which are available to any running program are called "environment variables".  These can be anything set in a `.profile`, `.bashrc`, or other startup script.  A common variable is `PATH` which lists a series of directories which the shell will search for any given command.  To see the current environment variables, type `env` and press enter.  Bonus tip: To have the shell find variables or values with a given string, type `env | grep "value"`.  That will show any variable with "value" as part of the name or value.  To show the variables alphabetically sorted, `env | sort`.
+</details>
+
 
 ### Comments from the peanut gallery
 Any line starting with `#` will be ignored.  There have been times I've started a long command but didn't want to run it just yet.  To "save" it, I'd go to the start of the line and add a `#` and press enter.  It would save the line in the command history but not actually run it.  I could then press up arrow and remove the `#` to run the command.
@@ -50,6 +54,9 @@ A very useful feature of the shell is the ability to chain commands.  The output
     some-command-with-a-lot-of-output | grep "wanted text"
 
 If you just want to search a text file, `grep "wanted text" filename` would work without having to pipe.
+
+### Executing a Script
+This might sound simple but it isn't just typing the name of the script.  For reasons I might've know at some point in history, you need to include a path on the command line.  Generally, it will be in the current directory so the path will be `./`.  As in, if the script to execute is `hello-world.sh`, the command line would be `./hello-world.sh`.  I believe it might be that the shell does not look in the current directory for executables; it only looks in folders in the current `PATH` environment setting.  Putting `./` on the command line is telling the shell to look in the current directory for the script.
 
 ***
 
